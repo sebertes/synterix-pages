@@ -4,6 +4,10 @@ import {Marked} from "marked";
 import fm from 'front-matter';
 import hljs from "highlight.js";
 import {markedHighlight} from "marked-highlight";
+import {fileURLToPath} from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = Path.dirname(__filename);
 
 async function isDirectory(path) {
     let t = await fs.stat(path);
@@ -143,5 +147,4 @@ class DocsProvider {
 
 }
 
-
-export const docsProvider = new DocsProvider("/Users/wangjinliang/sebertes/synterix-ui/packages/synterix-pages/content");
+export const docsProvider = new DocsProvider(import.meta.env.CONTENT_BASE_PATH || '');
