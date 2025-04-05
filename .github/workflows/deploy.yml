@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          CONTENT_BASE_PATH: /${{ github.event.repository.name }/content}
+          CONTENT_BASE_PATH: /${{ github.event.repository.name }}/content
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
