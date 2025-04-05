@@ -147,4 +147,4 @@ class DocsProvider {
 
 }
 
-export const docsProvider = new DocsProvider(import.meta.env.CONTENT_BASE_PATH || '');
+export const docsProvider = new DocsProvider(import.meta.env.VITE_BASE_PATH || '');
