@@ -6,9 +6,9 @@ index: 20
 
 ## 下载地址
 
-- [MacOS](https://github.com/sebertes/synterix-ui/releases/download/v1.0.0/synterix-ui-macos.dmg)
-- [Windows](https://github.com/sebertes/synterix-ui/releases/download/v1.0.0/synterix-ui-windows.zip)
-- [Linux](https://github.com/sebertes/synterix-ui/releases/download/v1.0.0/synterix-ui-linux.zip)
+- [MacOS](https://github.com/sebertes/synterix-ui/releases/download/v0.0.1/synterix-mac-arm64-1.0.0.dmg)
+- [Windows](https://github.com/sebertes/synterix-ui/releases/download/v0.0.1/synterix-win-x64-1.0.0.exe)
+- [Linux](https://github.com/sebertes/synterix-ui/releases/download/v0.0.1/synterix-linux-x86_64-1.0.0.AppImage)
 
 ## 应用截图
 

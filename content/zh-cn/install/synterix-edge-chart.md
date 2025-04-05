@@ -24,7 +24,7 @@ index: 3
 ### 添加 Helm 仓库
 
 ```bash
-helm repo add synterix-edge https://<your-repo-url>
+helm repo add synterix-edge http://chart.synterix.cloud
 helm repo update
 ```
 
@@ -41,7 +41,7 @@ helm install synterix-edge synterix-edge/synterix-edge --set namespaces[0]="*"
 （仅授权特定命名空间）：
 
 ```bash
-helm install synterix-edge synterix-edge/synterix-edge --set namespaces={comblox,comblox-test}
+helm install synterix-edge synterix-edge/synterix-edge --set namespaces={test,test-2}
 ```
 
 ### 自定义配置安装
@@ -56,7 +56,7 @@ helm install synterix-edge synterix-edge/synterix-edge -f custom-values.yaml
 
 | 参数项                      | 功能描述                                       | 默认值                                                            |
 |-----------------------------|----------------------------------------------|----------------------------------------------------------------|
-| `namespaces`                | 管理的命名空间列表（"*"表示集群全局）           | `["comblox","comblox-test"]`                                   |
+| `namespaces`                | 管理的命名空间列表（"*"表示集群全局）           | `["test","tes-2"]`                                             |
 | `deployment.replicaCount`   | 副本数量                                      | `1`                                                            |
 | `deployment.image.gateway`  | 网关镜像配置                                  | `repository: sebertes/synterix-central-gateway`, `tag: latest` |
 | `deployment.image.proxy`    | 代理镜像配置                                  | `repository: sebertes/synterix-kube-proxy`, `tag: latest`      |

@@ -50,28 +50,28 @@ helm install synterix synterix/synterix \
 
 ## 配置参数
 
-| 参数 | 描述 | 默认值 |
-|------|------|-------|
-| `global.namespace` | 所有资源的命名空间 | `synterix` |
-| `global.secret.name` | 密钥名称 | `synterix-secret` |
-| `global.secret.data` | Base64 编码的密钥值 | `c2VjcmV0` ("secret") |
-| `serviceAccount.name` | 服务账户名称 | `synterix-central-account` |
-| `rbac.bindingName` | 集群角色绑定名称 | `synterix-central-account-binding` |
+| 参数 | 描述 | 默认值                                 |
+|------|------|-------------------------------------|
+| `global.namespace` | 所有资源的命名空间 | `synterix`                          |
+| `global.secret.name` | 密钥名称 | `synterix-secret`                   |
+| `global.secret.data` | Base64 编码的密钥值 | `c2VjcmV0` ("secret")               |
+| `serviceAccount.name` | 服务账户名称 | `synterix-central-account`          |
+| `rbac.bindingName` | 集群角色绑定名称 | `synterix-central-account-binding`  |
 | `centralGateway.image` | 中央网关镜像 | `sebertes/synterix-central-gateway` |
-| `centralGateway.tag` | 镜像标签 | `master` |
-| `centralGateway.port` | 服务端口 | `7089` |
-| `kubeProxy.image` | Kube 代理镜像 | `sebertes/synterix-kube-proxy` |
-| `kubeProxy.tag` | 镜像标签 | `master` |
-| `kubeProxy.port` | 服务端口 | `7014` |
-| `centralAdmin.image` | 中央管理镜像 | `sebertes/synterix-central-admin` |
-| `centralAdmin.tag` | 镜像标签 | `master` |
-| `centralAdmin.port` | 服务端口 | `7088` |
-| `centralAdmin.dbPath` | 数据库路径 | `"/synterix/synterix.db"` |
-| `centralAdmin.storage.size` | PVC 存储大小 | `1Gi` |
-| `ingress.enabled` | 启用 Ingress | `true` |
-| `ingress.className` | Ingress 类别 | `nginx` |
-| `ingress.host` | Ingress 主机 | `yuntuops.bjttsx.com` |
-| `ingress.path` | Ingress 路径 | `/synterix/(.*)` |
+| `centralGateway.tag` | 镜像标签 | `master`                            |
+| `centralGateway.port` | 服务端口 | `7089`                              |
+| `kubeProxy.image` | Kube 代理镜像 | `sebertes/synterix-kube-proxy`      |
+| `kubeProxy.tag` | 镜像标签 | `master`                            |
+| `kubeProxy.port` | 服务端口 | `7014`                              |
+| `centralAdmin.image` | 中央管理镜像 | `sebertes/synterix-central-admin`   |
+| `centralAdmin.tag` | 镜像标签 | `master`                            |
+| `centralAdmin.port` | 服务端口 | `7088`                              |
+| `centralAdmin.dbPath` | 数据库路径 | `"/synterix/synterix.db"`           |
+| `centralAdmin.storage.size` | PVC 存储大小 | `1Gi`                               |
+| `ingress.enabled` | 启用 Ingress | `true`                              |
+| `ingress.className` | Ingress 类别 | `nginx`                             |
+| `ingress.host` | Ingress 主机 | `xxxx.com`                          |
+| `ingress.path` | Ingress 路径 | `/synterix/(.*)`                    |
 
 ## 资源分配
 

@@ -81,7 +81,7 @@
                 <div class="brand">
                     <OpencollectiveIcon/>
                 </div>
-                <a href="https://opencollective.com/sebertes" class="brand-desc">Open Collective</a>
+                <a href="https://opencollective.com/sebertes" target="_blank" class="brand-desc">Open Collective</a>
             </div>
         </div>
     </div>
@@ -100,21 +100,14 @@
                 <div class="brand">
                     <OpencollectiveIcon/>
                 </div>
-                <a href="https://opencollective.com/sebertes" class="brand-desc">Open Collective</a>
+                <a href="https://opencollective.com/sebertes" target="_blank" class="brand-desc">Open Collective</a>
             </div>
             <div class="item">
                 <div class="brand">
                     <WechatPayIcon/>
                 </div>
                 <button class="dived linkable brand-desc"
-                        onclick={()=>openPopup("/favicon.png")}>{data.keys.key_23}</button>
-            </div>
-            <div class="item">
-                <div class="brand">
-                    <AlipayIcon/>
-                </div>
-                <button class="dived linkable brand-desc"
-                        onclick={()=>openPopup("/favicon.png")}>{data.keys.key_24}</button>
+                        onclick={()=>openPopup("/images/pic_a.png")}>{data.keys.key_23}</button>
             </div>
         </div>
     </div>
@@ -134,13 +127,13 @@
                     <WechatIcon/>
                 </div>
                 <button class="dived linkable brand-desc"
-                        onclick={()=>openPopup("/favicon.png")}>{data.keys.key_27}</button>
+                        onclick={()=>openPopup("/images/pic_b.png")}>{data.keys.key_27}</button>
             </div>
             <div class="item">
                 <div class="brand">
                     <DiscordIcon/>
                 </div>
-                <a href="https://discord.com/" class="brand-desc">Discord</a>
+                <a href="https://discord.gg/fyzZSDeR" target="_blank" class="brand-desc">Discord</a>
             </div>
         </div>
     </div>
