@@ -277,7 +277,7 @@
       }
     }
     .right {
-      padding: 0 0 0 200px;
+      padding: 0 0 50px 200px;
 
       .content {
         width: 100%;
@@ -318,7 +318,7 @@
       }
     }
     .right {
-      padding: 0 20px 0 20px;
+      padding: 0 20px 50px 20px;
       width: auto;
 
       .content {

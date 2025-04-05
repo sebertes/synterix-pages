@@ -175,15 +175,14 @@
 
   .head-banner {
     max-width: 1200px;
-    height: 150px;
     margin: 0 auto;
     overflow: hidden;
-    display: flex;
+    padding: 40px 0 40px 0;
+    position: relative;
 
     .head-banner-left {
-      flex: 1;
-      display: flex;
-      align-items: center;
+      position: relative;
+      z-index: 1000;
 
       .header-banner-inner {
         padding-left: 20px;
@@ -200,7 +199,10 @@
     }
 
     .head-banner-right {
-      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 50px;
+      width: 35%;
       margin-top: -90px;
       transform: rotate(-30deg);
     }
@@ -268,11 +270,11 @@
 
   @media screen and (max-width: 1200px) {
     .head-banner {
-      height: 100px;
-
       .head-banner-right {
-        width: 50%;
+        width: 40%;
         margin-top: 0px;
+        right: -10px;
+        top: 0;
         transform: rotate(-30deg);
       }
     }
@@ -284,6 +286,18 @@
       .footer-body {
         width: 100%;
         box-sizing: border-box;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .head-banner {
+      .head-banner-right {
+        width: 70%;
+        margin-top: 0px;
+        right: -10px;
+        top: 0;
+        transform: rotate(-30deg);
       }
     }
   }

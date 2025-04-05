@@ -183,6 +183,7 @@
 
   .demo {
     background-color: $surfaceContainerHigh;
+    overflow: hidden;
 
     .demo-body {
       max-width: 1200px;

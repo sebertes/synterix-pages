@@ -246,7 +246,7 @@
         position: relative;
         display: block;
         overflow: hidden;
-        padding:0;
+        padding: 0;
 
         .left {
           width: 100%;
@@ -359,7 +359,37 @@
         padding: 40px 0 40px 0;
         grid-template-columns: repeat(1, 1fr);
         gap: 0;
+        .feature-item{
+          margin-bottom: 30px;
+        }
+      }
+    }
 
+    .demo {
+      overflow: hidden;
+
+      .demo-body {
+        padding: 20px 0 20px 0;
+
+        .demo-image {
+          &.one {
+            position: static;
+            transform: rotate(0deg);
+            width: 100%;
+          }
+
+          &.two {
+            position: static;
+            transform: rotate(0deg);
+            width: 100%;
+          }
+
+          &.three {
+            position: static;
+            transform: rotate(0deg);
+            width: 100%;
+          }
+        }
       }
     }
   }
